@@ -1,0 +1,9 @@
+<nav role="navigation">
+    <div id="top">
+      <img id="logo" src="{% if site.logo %}{{ site.url | append: site.baseurl | append: site.logo }}{% else %}https://placeimg.com/64/64/any{% endif %}" alt="logo" width="64" height="64">
+      <h3><a id="title" href="{{ site.url | append: site.baseurl }}">{{ site.name }}</a></h3>
+    </div>
+    <a href="{{ site.url | append: site.baseurl }}/about/">About</a> •
+    <a href="{{ site.url | append: site.baseurl }}/contact/">Contact</a> •
+    <a href="https://github.com/{{ site.github }}">Github</a>
+</nav>

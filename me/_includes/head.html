@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{ site.name }} • {{ page.title }}</title>
+<meta name="description" content="{{ site.bio }}">
+<meta name="theme-color" content="#444444">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://unpkg.com">
+{% unless site.favicon %}<link rel="dns-prefetch" href="https://placeimg.com">{% endunless %}
+<link rel="shortcut icon" type="image/png" href="{% if site.favicon %}{{ site.url | append: site.baseurl | append: site.favicon }}{% else %}https://placeimg.com/32/32/any{% endif %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css">
+<style>
+#top {
+  display: flex;
+  align-items: center;
+}
+#title {
+  margin-left: 1em;
+}
+</style>

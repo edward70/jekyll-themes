@@ -1,0 +1,221 @@
+﻿@-ms-viewport {
+    width: device-width;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    background-color: #fefefe;
+    color: #000a12;
+    font: 1em/1.45 'IM Fell Double Pica SC', 'Book Antiqua', Palatino, 'Noto Serif', 'Droid Serif', Georgia, serif;
+}
+
+body {
+    margin: 0 3em;
+}
+
+@media (max-width: 42.75em) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 23.875em) {
+    html {
+        font-size: 75%;
+    }
+}
+
+main {
+    /* 75 character line length */
+    max-width: 75ex;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.618em;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3em;
+    margin-top: 0.979em;
+}
+
+footer {
+    text-align: center;
+}
+
+p, footer, ul, ol, figure, form, details, address, dl, blockquote {
+    margin-bottom: 2.5em;
+}
+
+p {
+    font-size: 108.25%;
+}
+
+article {
+    font-family: 'IM Fell English', 'Baskerville Old Face', 'Bookman Old Style', Palatino, 'Noto Serif', 'Droid Serif', "Nimbus Roman No9 L", "Century Schoolbook L", Georgia, serif;
+    text-rendering: optimizeLegibility;
+}
+
+footer {
+    font-size: 95%;
+    font-weight: bold;
+}
+
+nav > a, footer {
+    font-family: system-ui, sans-serif;
+}
+
+#d {
+    float: left;
+    font-size: 3em;
+    line-height: 1.15;
+    height: 0.5em;
+    margin-right: .2em;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre, code, kbd, samp {
+    font-family: "Ubuntu Mono", Menlo, Consolas, "Roboto Mono", Monaco, monospace;
+}
+
+audio, embed, iframe, img, object, video {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 2.5em;
+}
+
+iframe, img {
+    border: 0;
+}
+
+/* CSS Only Navigation! */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+nav, #c {
+    display: none;
+}
+
+#o, #c {
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+#t, #o, #c {
+    -webkit-appearance: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#t {
+    width: 1em;
+    height: 2em;
+    vertical-align: top;
+    margin-right: -1.5em;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#t:checked ~ nav {
+    display: block;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
+}
+
+#t:checked ~ #o {
+    display: none;
+}
+
+#t:checked ~ #c {
+    display: inline;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
+}
+
+#o, #c {
+    color: #000a12;
+    font-size: 1.5em;
+}
+
+nav > a {
+    display: block;
+    text-decoration: none;
+    color: #000a12;
+    font-size: 1.25em;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: .5em 0 0 .75em;
+}
+
+@media (max-width: 55em) {
+    aside {
+        position: initial;
+        padding: 0;
+        margin-top: 1em;
+    }
+    h1 {
+        margin: 0.4em 0;
+    }
+}
+
+/* Selection customisation */
+
+::selection {
+    background-color: #000a12;
+    color: #fefefe;
+}
+
+::-moz-selection {
+    background-color: #000a12;
+    color: #fefefe;
+}
+
+::-webkit-scrollbar {
+    width: 0.625em;
+    height: 0.625em;
+    background-color: #fefefe;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000a12;
+}

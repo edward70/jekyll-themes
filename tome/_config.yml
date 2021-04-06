@@ -1,0 +1,28 @@
+name: "Tome" # name of blog
+author: "Edward" # your name
+bio: "Hello World!" # info about you
+url: "https://example.github.io" # url eg. https://google.com
+github: "example" # github username eg. edwr
+email: "example@example.com" # email address
+baseurl: "/tome" # when hosting on github pages under specific folder eg. /blog
+theme: "#212121" # theme color
+favicon: # favicon eg. /favicon.png
+permalink: /:title/
+version: v1.0.0
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+sass:
+  style: :compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

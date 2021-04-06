@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ site.name }} • {{ page.title }}</title>
+    <meta name="description" content="{{ site.bio }}">
+    <meta name="theme-color" content="{{ site.theme }}">
+    <link rel="shortcut icon" type="image/png" href="{% if site.favicon %}{{ site.url | append: site.baseurl | append: site.favicon }}{% else %}https://placeimg.com/32/32/any{% endif %}">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC|IM+Fell+English:400,400i" rel="stylesheet">
+    <link href="{{ site.url | append: site.baseurl }}/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main role="main">
+      {% include nav.html %}
+      <h1>{{ page.title }}</h1>
+      <article>
+        {{ content }}
+      </article>
+    </main>
+    <footer role="contentinfo">&copy; {{ 'now' | date: "%Y" }} {{ site.author }}</footer>
+  </body>
+</html>
